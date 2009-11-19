@@ -1,0 +1,83 @@
+
+=head1 NAME
+
+Locale::Maketext::Demo - using Locale::Maketext and ::Lexicon
+
+=head1 DESCRIPTION
+
+Simple example, usable right in place, that demonstrates basics
+of building multi-language applications with Locale::Maketext
+and extending this framework with new features.
+
+=head1 USAGE
+
+    cd dir/
+    perl test.pl
+
+=head1 SIMPLE THINGS
+
+Read code, it's very simple.
+
+=head1 ADVANCED
+
+=head2 quant with placeholders for number
+
+Usage:
+
+    loc("[quant,_1,there are _1 object,there is _1 objects,no objects] in the system.", $num);
+
+By default quant adds number in front of string, that is not
+suitable for some languages situations, for example:
+
+    10 objects have been created
+
+In russian you can write the same using different ordering:
+
+    have been created 10 objects
+
+And in russian you change "have", "created" and "objects"
+depending on number:
+
+    Был  создан  1   объект
+    Было создано 2   объекта
+    Было создано 300 объектов
+
+Even if you don't know russian you may see the difference.
+
+=head2 list function
+
+Usage:
+
+    loc(
+        "[list,_1,and,Player _1 won,Players _1 won,Draw]!",
+        [qw(foo bar baz)],
+    );
+
+Variants:
+
+    Draw!
+    Player ruz won!
+    Players foo, bar and baz won!
+
+=head1 CONTRIBUTE
+
+You may contribute:
+
+=over 4
+
+=item * with implementations for other languages
+
+=item * with description of corner cases for variouse languages
+
+=item * with new useful functions implemented for your language and/or english
+
+=item * with documentation
+
+=item * with extractor script based on Locale::Maketext::Extract
+
+=item * in many different ways
+
+=back
+
+=cut
+
