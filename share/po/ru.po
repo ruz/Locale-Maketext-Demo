@@ -1,0 +1,26 @@
+# sample data
+msgid ""
+msgstr ""
+"Project-Id-Version: MyApp\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 
+msgid "Hello, World!"
+msgstr "Привет, Мир!"
+
+#: 
+msgid "Hello, World!"
+msgstr "Привет, Мир!"
+
+#: 
+msgid "Hello, [_1]!"
+msgstr "Привет, [_1]!"
+
+#:
+msgid "Launched %quant(%1,process,processes,zero processes)"
+msgstr "%quant(%1,процесс запущен,процесса запущены,процессов запущено,ноль процессов запущено)"
+
+msgid "%list(%1,and,Player _1 won,Players _1 won,Draw)!"
+msgstr "%list(%1,и,Игрок _1 выиграл,Игроки _1 выиграли,,Ничья)!"
